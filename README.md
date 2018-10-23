@@ -2,7 +2,7 @@
 # This code has been written according to the final Project of the getting and cleaning data course on Corsera by Jhon Hopkins University which is course 3 out of 10 courses in a Data science specialization.
 # I have pasted the code here with comments describing what each step does 
 # I will first describe the steps here: 
-#We first download the data, store it in a folder called "data" after unzipping it. 
+# We first download the data, store it in a folder called "data" after unzipping it. 
 # We then read all the data that we are going to work on
 # We bind the Training and Testing data's toghter binding the Subject, activity labels and the features in one data frame then binding the Both training and testing data togther
 # We then Add the feature names to the newly created data frame containing all the data as well as adding the "Subject" and "Activity" column names to the data frame accordingly. 
