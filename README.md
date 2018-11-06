@@ -3,18 +3,18 @@
 ### I have pasted the code here with comments describing what each step does 
 
 ### I will first describe the steps here: 
-1- We first download the data, store it in a folder called "data" after unzipping it. 
-2- We then read all the data that we are going to work on
-3- We bind the Training and Testing's data toghter binding the Subject, activity labels and the features in one data frame then binding  Both the training and testing data togther
-4- We then Add the feature names to the newly created data frame "containing all the data" as well as adding the "Subject" and "Activity" column names to the data frame accordingly. 
-# We then need to change the Activity lables from 1-6 to more meaningfull names, to their actual names countained in the features.txt, We do so by first converting them to factors then changing the factor level's names according to those found in the features.txt file. 
-# I have to note that I used this way of chnaging the names because I found it to be easy, yet there are ofcourse other way to do it. 
-# Ok now we only have to fetch  the columns containing "Mean" and "STD" using grep and assign them  to a new data frame 
-# Here we have a tidey well defined data  which we will need to take the means of each column according to each "subject" per each "activity" 
-# We use the aggregate function to do so as shown below
-# Now our final created data frame needs its names chnaged, thus we add "Mean Of(...)" to the original names of the columns referred to as "...". 
-# The last line hase been commented where it actually creates a new Text file containing the final output data
-# Here is the commented code:
+- We first download the data, store it in a folder called "data" after unzipping it. 
+- We then read all the data that we are going to work on
+- We bind the Training and Testing's data toghter binding the Subject, activity labels and the features in one data frame then binding  Both the training and testing data togther
+- We then Add the feature names to the newly created data frame "containing all the data" as well as adding the "Subject" and "Activity" column names to the data frame accordingly. 
+- We then need to change the Activity lables from 1-6 to more meaningfull names, to their actual names countained in the features.txt, We do so by first converting them to factors then changing the factor level's names according to those found in the features.txt file. 
+- I have to note that I used this way of chnaging the names because I found it to be easy, yet there are ofcourse other way to do it. 
+- Ok now we only have to fetch  the columns containing "Mean" and "STD" using grep and assign them  to a new data frame 
+- Here we have a tidey well defined data  which we will need to take the means of each column according to each "subject" per each "activity" 
+- We use the aggregate function to do so as shown below
+- Now our final created data frame needs its names chnaged, thus we add "Mean Of(...)" to the original names of the columns referred to as "...". 
+- The last line hase been commented where it actually creates a new Text file containing the final output data
+- Here is the commented code:
 ```
  if (!file.exists("./Data")) {dir.create("./Data")} #Creates a new folder called Data if it doesn't already exisit in the current working directory 
  download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", destfile = "../Data.zip") Downloads the data files to the working directory out side the Data folder
