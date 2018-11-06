@@ -1,4 +1,4 @@
-# *Getting and Cleaning Data Project*
+# Getting and Cleaning Data Project
 ### This code has been written according to the final Project of the getting and cleaning data course on Corsera by Jhon Hopkins University which is course 3 out of 10 courses in a Data science specialization.
 ### I have pasted the code here with comments describing what each step does 
 ### I will first describe the steps here: 
