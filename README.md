@@ -1,7 +1,6 @@
 # 3-Getting-and-Cleaning-Data-Project
 ### This code has been written according to the final Project of the getting and cleaning data course on Corsera by Jhon Hopkins University which is course 3 out of 10 courses in a Data science specialization.
 ### I have pasted the code here with comments describing what each step does 
-
 ### I will first describe the steps here: 
 - We first download the data, store it in a folder called "data" after unzipping it. 
 - We then read all the data that we are going to work on
@@ -14,7 +13,7 @@
 - We use the aggregate function to do so as shown below
 - Now our final created data frame needs its names chnaged, thus we add "Mean Of(...)" to the original names of the columns referred to as "...". 
 - The last line hase been commented where it actually creates a new Text file containing the final output data
-- Here is the commented code:
+### Here is the commented code:
 ```
  if (!file.exists("./Data")) {dir.create("./Data")} #Creates a new folder called Data if it doesn't already exisit in the current working directory 
  download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", destfile = "../Data.zip") Downloads the data files to the working directory out side the Data folder
