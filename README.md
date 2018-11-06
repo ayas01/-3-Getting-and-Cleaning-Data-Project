@@ -12,7 +12,7 @@
 - Here we have a tidey well defined data  which we will need to take the means of each column according to each "subject" per each "activity" 
 - We use the aggregate function to do so as shown below
 - Now our final created data frame needs its names chnaged, thus we add "Mean Of(...)" to the original names of the columns referred to as "...". 
-- The last line hase been commented where it actually creates a new Text file containing the final output data
+
 ### Here is the commented code:
 ```
  if (!file.exists("./Data")) {dir.create("./Data")} #Creates a new folder called Data if it doesn't already exisit in the current working directory 
