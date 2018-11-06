@@ -25,14 +25,14 @@ Each row represents each subject (1-30) and each activity per subject, (6) activ
 The columns are the mean of each selected feature; the selected features are the ones that contained mean and standard deviation measurements from the original features.
 
 ### First two columns 
--Subject : The Id of the subjects (1-30)
--Activity: The type of movement they had
-  -WALKING
-  -WALKING_UPSTAIRS
-  -WALKING_DOWNSTAIRS
-  -SITTING
-  -STANDING
-  -LAYING
+- Subject : The Id of the subjects (1-30)
+- Activity: The type of movement they had
+  - WALKING
+  - WALKING_UPSTAIRS
+  - WALKING_DOWNSTAIRS
+  - SITTING
+  - STANDING
+  - LAYING
  ### The rest of the columns (Means of the selected features)
 
 - Mean Of Time Body Accelerometer Mean X
@@ -114,3 +114,13 @@ The columns are the mean of each selected feature; the selected features are the
 - Mean Of Frequency Body Body Gyroscope Jerk Magnitude Mean
 - Mean Of Frequency Body Body Gyroscope Jerk Magnitude Std
 - Mean Of Frequency Body Body Gyroscope Jerk Magnitude Mean Frequency
+
+### The Analysis has been done as follows on the data to produce the final file: 
+
+- Merged the training and test sets to create one data set.
+- Extracted only the measurements on the mean and standard deviation for each measurement.
+- Used descriptive activity names to name the activities in the data set.
+- Appropriately labeled the data set with descriptive variable names.
+- From the data set in step 4, created a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
