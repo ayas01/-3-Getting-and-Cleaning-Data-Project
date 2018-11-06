@@ -1,7 +1,8 @@
 # Getting and Cleaning Data Project
 ### This code has been written according to the final Project of the getting and cleaning data course on Corsera by Jhon Hopkins University which is course 3 out of 10 courses in a Data science specialization.
+### The source data (raw data) for this project was obtianed from the UCL Machine Learning Repository called: Human Activity Recognition Using Smartphones Data Set.
 ### I have pasted the code here with comments describing what each step does 
-### I will first describe the steps here: 
+## I will first describe the steps here: 
 - We first download the data, store it in a folder called "data" after unzipping it. 
 - We then read all the data that we are going to work on
 - We bind the Training and Testing's data toghter binding the Subject, activity labels and the features in one data frame then binding  Both the training and testing data togther
